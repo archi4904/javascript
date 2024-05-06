@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript try-catch Statement</title>
+</head>
+<body>
+    <script>
+    try {
+        var greet = "Hi, there!";
+        document.write(greet);
+        
+        // Trying to access a non-existent variable
+        document.write(welcome);
+        
+        // If error occurred following line won't execute
+        alert("All statements are executed successfully.");
+    } catch(error) {
+        // Handle the error
+      alert("Caught error: " + error.message);
+    }
+     
+    // Continue execution
+    document.write("<p>Hello World!</p>");
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript try-catch-finally Statement</title>
+</head>
+<body>
+    <script>
+    // Assigning the value returned by the prompt dialog box to a variable
+    var num = prompt("Enter a positive integer between 0 to 100");
+    
+    // Storing the time when execution start
+    var start = Date.now();
+    
+    try {
+        if(num > 0 && num <= 100) {
+            alert(Math.pow(num, num)); // the base to the exponent power
+        } else {
+            throw new Error("An invalid value is entered!");
+        }
+    } catch(e) {
+        alert(e.message);
+    } finally {
+        // Displaying the time taken to execute the code
+        alert("Execution took: " + (Date.now() - start) + "ms");
+    }
+    </script>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Throwing an Error in JavaScript</title>
+</head>
+<body>
+    <script>
+    function squareRoot(number) {
+        // Throw error if number is negative
+        if(number < 0) {
+            throw new Error("Sorry, can't calculate square root of a negative number.");
+        } else {
+            return Math.sqrt(number);
+        }
+    }
+        
+    try {
+        squareRoot(16);
+        squareRoot(625);
+        squareRoot(-9);
+        squareRoot(100);
+        
+        // If error is thrown following line won't execute
+        alert("All calculations are performed successfully.");
+    } catch(e) {
+        // Handle the error
+        alert(e.message);
+    }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript throw Statement</title>
+</head>
+<body>
+    <script>
+    var num = prompt("Please enter an integer value");
+    
+    try {
+        if(num == "" || num == null || !Number.isInteger(+num)) {
+            throw new Error("Invalid value!");
+        } else {
+            document.write("Correct value!");
+        }
+    } catch(e) {
+        document.write(e.message);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function Hello() {
+            document.write("Hello, welcome to this website!");
+        }
+        Hello();
+        
+     function displaySum(num1, num2) {
+        var total = num1 + num2;
+        document.write(total);
+    }
+    displaySum(6, 20); 
+    document.write("<br>");
+    displaySum(-5, 17);
+
+    function sayHello(name='World'){
+        return `Hello ${name}!`;
+    }
+    document.write(sayHello()); // Hello World!
+    document.write("<br>");
+    document.write(sayHello('John'));
+
+    function getSum(num1, num2) {
+        var total = num1 + num2;
+        return total;
+    }
+     
+    // Displaying returned value
+    document.write(getSum(6, 20) + "<br>"); // Prints: 26
+    document.write(getSum(-5, 17));
+
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male",
+        displayName: function() {
+            alert(this.name);
+        }
+    };
+    
+    document.write(person.name + "<br>"); // Prints: Peter
+    document.write(person.age + "<br>"); // Prints: 28
+    document.write(person.gender); // Prints: Male
+    console.log(person); 
+
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male"
+    };
+    
+    // Setting a new property
+    person.country = "United States";
+    document.write(person.country + "<br>"); // Prints: United States
+    
+    person["email"] = "peterparker@mail.com";
+    document.write(person.email + "<br>"); // Prints: peterparker@mail.com
+    
+    // Updating existing property
+    person.age = 30;
+    document.write(person.age + "<br>"); // Prints: 30
+    
+    person["name"] = "Peter Parker";
+    document.write(person.name); 
+    </script>
+</body>
+</html>

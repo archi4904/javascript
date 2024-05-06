@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //example 1
+        var a =new Date();
+        var b= a.getDay();
+        if(b==0)
+        {
+            document.write("sunday");
+        }
+        else if(b==1)
+        {
+            document.write("monday");
+        }
+        else if(b==2)
+        {
+            document.write("tuesday");
+        }
+        else if(b==3)
+        {
+            document.write("wednesday");
+        }
+        else if(b==4)
+        {
+            document.write("thurday");
+        }
+        else if(b==5)
+        {
+            document.write("friday");
+        }
+        else
+        {
+            document.write("saturday");
+        }
+        //example 2
+        var nationality="INDAIN";
+        var age=23;
+        if(nationality=="INDAIN")
+        {
+            if(age>=18)
+            {
+                document.write("you are eiligible to vote");
+            }    
+            else{
+                document.write("you are not eiligible to vote"); 
+            }
+        }
+        else{
+            document.write("you are not indian");
+        }
+    </script>
+</body>
+</html>

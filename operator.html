@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //arithmatic operator
+    var x = 10;
+    var y = 4;
+    document.write(x + y); 
+    document.write("<br>");
+    
+    document.write(x - y); 
+    document.write("<br>");
+    
+    document.write(x * y); 
+    document.write("<br>");
+    
+    document.write(x / y); 
+    document.write("<br>");
+    
+    document.write(x % y); 
+    document.write("<br>");
+
+    //assignment operators
+    var str1 = "Hello";
+    var str2 = " World!";
+    
+    document.write(str1 + str2 + "<br>"); 
+    str1 += str2;
+    document.write(str1);
+
+    //increment or decrement operator
+    var x; 
+ 
+    x = 10;
+    document.write(++x); 
+    document.write("<p>" + x + "</p>");   
+     
+    x = 10;
+    document.write(x++); 
+    document.write("<p>" + x + "</p>");   
+     
+    x = 10;
+    document.write(--x); 
+    document.write("<p>" + x + "</p>");   
+     
+    x = 10;
+    document.write(x--);
+    document.write("<p>" + x + "</p>");
+
+    //logical operator
+    var year = 2018;
+ 
+    // Leap years are divisible by 400 or by 4 but not 100
+    if((year % 400 == 0) || ((year % 100 != 0) && (year % 4 == 0)))
+    {
+    document.write(year + " is a leap year.");
+    } 
+    else
+    {
+    document.write(year + " is not a leap year.");
+    }
+
+    //comparision operator
+    var x = 25;
+    var y = 35;
+    var z = "25";
+     
+    document.write(x == z);  
+    document.write("<br>");
+    
+    document.write(x === z);
+    document.write("<br>");
+    
+    document.write(x != y);  
+    document.write("<br>");
+    
+    document.write(x !== z); 
+    document.write("<br>");
+    
+    document.write(x < y);   
+    document.write("<br>");
+    
+    document.write(x > y);   
+    document.write("<br>");
+    
+    document.write(x <= y);  
+    document.write("<br>");
+    
+    document.write(x >= y);
+    </script>
+</body>
+</html>

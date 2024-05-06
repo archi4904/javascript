@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkLanguage(){
+            alert("Your browser language is:"+navigator.language);
+        }
+    </script>
+    <button type="button" onclick="checkLanguage();">check Language</button>
+
+
+    <script>
+        function getBrwoserInformation(){
+            var info ="\n App name:"+navigator.appName;
+            info+="\n App version:"+navigator.appVersion;
+            info+="\n App code number:"+navigator.appCodeName;
+            info+="\n user agent:"+navigator.userAgent;
+            info+="\n platform:"+navigator.platform;
+
+            alert("here the information related to your browser:"+info);
+                    
+        }
+    </script>
+    <button type="button" onclick="getBrwoserInformation();">getBrwoserInformation</button>
+</body>
+</html>

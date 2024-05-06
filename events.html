@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--onclick button-->>
+    <button type="button" onclick="alert('You have clicked a button!');">Click Me</button>
+    <a href="#" onclick="alert('You have clicked a link!');">Click Me</a>
+    <!--oncontextme button-->
+    <button type="button" oncontextmenu="alert('You have right-clicked a button!');">Right Click on Me</button>
+    <a href="#" oncontextmenu="alert('You have right-clicked a link!');">Right Click on Me</a>
+    <!--ondblclick button-->
+    <button type="button" ondblclick="alert('you have to double clicked a button');">double click on Me</button>
+    <a href="#" ondblclick="alert('you have to double clicked a button');">Double click on me</a>
+    <!--onmouseover button-->
+    <button type="button" onmouseover="alert('you have to move the mouse on me');">move towards me</button>
+    <a href="#" onmouseover="alert('you have to move the mouse on me');">move towards me</a>
+    <!--onmouseout button-->
+    <button type="button" onmouseout="alert('you have to move the mouse on me');">move towards me</button>
+    <a href="#" onmouseout="alert('you have to move the mouse on me');">move towards me</a>
+    <!--onkeyup button-->
+    <input type="text" onkeyup="alert('you have to press the key again');">
+    <hr>
+    <textarea cols="30" onkeydown="alert('You have pressed a key inside textarea!')"></textarea>
+    <!--onkeydown button-->
+    <input type="text" onkeyup="alert('You have released a key inside text input!')">
+    <hr>
+    <textarea cols="30" onkeyup="alert('You have released a key inside textarea!')"></textarea>
+    <!--onkeypress buttom-->
+    <input type="text" onkeypress="alert('You have released a key inside text input!')">
+    <hr>
+    <textarea cols="30" onkeypress="alert('You have released a key inside textarea!')"></textarea>
+    <!--onfocus button-->
+    <script>
+        function highlightInput(elm)
+        {
+            elm.style.background = "yellow";
+        }
+    </script>
+    <input type="text" onfocus="highlightInput(this)">
+    <button type="button">Button</button>
+    <!--onblur button-->
+    <input type="text" onblur="alert('Text input loses focus!')">
+    <button type="button">Submit</button>
+	<!--onchange button-->
+    <select onchange="alert('You have changed the selection!');">
+        <option>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <!--onsubmit button-->
+    <form onsubmit="alert('Form data will be submitted to the server!');">
+        <label>First Name:</label>
+        <input type="text" name="first-name" required>
+        <input type="submit" value="Submit">
+    </form>
+    <!--onload button-->
+    <body onload="window.alert('Page is loaded successfully!');">
+        <h1>This is a heading</h1>
+        <p>This is paragraph of text.</p></body>
+    <!--on resize button-->
+    <p id="result"></p>   
+    <script>
+        function displayWindowSize(){
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var txt = "Window size: width=" + w + ", height=" + h;
+            document.getElementById("result").innerHTML = txt;
+        }
+        window.onresize = displayWindowSize;
+    </script> 
+
+
+
+
+</body>
+</html>

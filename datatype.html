@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     //string datatype
+     var a = 'Hi there!';  // using single quotes
+     var b = "Hi there!";  // using double quotes
+     document.write(a+"<br>");
+     document.write(b + "<br>");
+     var a = "Let's have a cup of coffee.";
+     var b = 'He said "Hello" and left.';
+     var c = 'We\'ll never give up.';
+     document.write(a + "<br>");
+     document.write(b + "<br>");
+     document.write(c + "<br>");
+   
+
+     //number datatype
+    var a = 25;
+    var b = 80.5;
+    var c = 4.25e+6; //e-hexadecimal value-(e=+ -than add zero in back)(e=- then zero is added in front)
+    var d = 4.25e-6;
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+    document.write(c + "<br>");
+    document.write(d + "<br>");
+    document.write(16 / 0);
+    document.write("<br>");
+    document.write(-16 / 0);
+    document.write("<br>");
+    document.write(16 / -0);
+    document.write("<br>");
+   
+    //boolean datatype
+    var isReading = true;   
+    var isSleeping = false; 
+    document.write(isReading + "<br>");
+    document.write(isSleeping);
+    var a = 2, b = 5, c = 10;
+    document.write(b > a) 
+    document.write("<br>");
+    document.write(b > c) 
+   
+    //undefined datatype
+    var a;
+    var b = "Hello World!"
+    document.write(a + "<br>");
+    document.write(b);
+
+   //null datatype
+    var a = null;
+    document.write(a + "<br>"); 
+    var b = "Hello World!"
+    document.write(b + "<br>"); 
+    b = null;
+    document.write(b) 
+
+    //array data tyep
+    var colors = ["Red", "Yellow", "Green", "Orange"];
+    var cities = ["London", "Paris", "New York"];
+    document.write(colors[0] + "<br>");   
+    document.write(cities[2]);   
+
+    //function datatype
+     var greeting = function()
+    { 
+    return "Hello World!"; 
+    }
+    document.write(typeof greeting) 
+    document.write("<br>");
+    document.write(greeting()); 
+    </script>
+   </script>
+</body>
+</html>
